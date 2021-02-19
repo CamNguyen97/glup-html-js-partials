@@ -7187,8 +7187,37 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  border: 1px solid;
-  color: black;
-  height: 40px; }
-  body .title {
-    color: red; }
+  background: #1B1B1B;
+  color: white; }
+  body .header {
+    background: gray;
+    min-height: 800px;
+    margin-bottom: 40px; }
+  body .name {
+    border: 1px solid;
+    min-height: 438px; }
+    body .name .bd-highlight {
+      width: 50%; }
+      body .name .bd-highlight .job {
+        color: #8CFFCF;
+        top: 42px;
+        margin-bottom: 32px; }
+      body .name .bd-highlight:nth-child(2) {
+        margin-left: 21px; }
+        body .name .bd-highlight:nth-child(2) .text-info {
+          text-align: justify;
+          margin-bottom: 32px; }
+    body .name .image {
+      border: 1px solid black; }
+    body .name .info {
+      margin-bottom: 33px; }
+      body .name .info span {
+        margin-right: 5px;
+        color: #8CFFCF; }
+      body .name .info div:nth-child(1) {
+        width: 30%; }
+      body .name .info button {
+        color: white; }
+        body .name .info button:nth-child(2) {
+          color: black;
+          background: #8CFFCF; }

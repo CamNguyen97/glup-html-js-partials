@@ -29,7 +29,7 @@ function watch() {
         }
     });
     gulp.watch('src/scss/*.scss', style);
-    gulp.watch('src/*.html').on('change',browserSync.reload);
+    gulp.watch('src/partials/*.html').on('change',gulp.series(html, browserSync.reload));
     gulp.watch('./js/**/*.js').on('change', browserSync.reload);
 }
 gulp.task(watch);

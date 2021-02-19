@@ -5,10 +5,50 @@ $theme-colors: (
 @import "node_modules/bootstrap/scss/bootstrap";
 
 body {
+  background: #1B1B1B;
+  color: white;
+  .header {
+    background: gray;
+    min-height:800px;
+    margin-bottom: 40px;
+  }
+  .name {
     border: 1px solid;
-    color: black;
-    height: 40px;
-    .title {
-        color: red;
+    min-height: 438px;
+    .bd-highlight {
+      width: 50%;
+      .job {
+        color: #8CFFCF;
+        top: 42px;
+        margin-bottom: 32px;
+      }
+      &:nth-child(2) {
+        margin-left: 21px;
+        .text-info {
+          text-align: justify;
+          margin-bottom: 32px;
+        }
+      }
     }
+    .image {
+      border: 1px solid black;
+    }
+    .info {
+      margin-bottom: 33px;
+      span {
+        margin-right: 5px;
+        color: #8CFFCF;
+      }
+      & div:nth-child(1) {
+        width: 30%;
+      }
+      button {
+        color: white;
+        &:nth-child(2) {
+          color: black;
+          background: #8CFFCF;
+        }
+      }
+    }
+  }
 }
