@@ -1,30 +1,37 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const htmlPartial = require('gulp-html-partial');
 const browserSync = require('browser-sync').create();
 
-//compile scss into css
-function style() {
-    //1.where is my scss
-    return gulp.src('src/scss/**/*.scss') //gets all files ending with .scss in src/scss
-    //2. pass that file through sass compiler
-    .pipe(sass().on('error',sass.logError))
-    //3. where do I save the compiled css file
-    .pipe(gulp.dest('src/css'))
-    //4. stream change to all browsers
-    .pipe(browserSync.stream());
+function html() {
+    return gulp.src('src/*.html')
+        .pipe(htmlPartial({
+            basePath: 'src/partials/'
+        }))
+        .pipe(gulp.dest('build'));
 }
+gulp.task(html);
+
+function style() {
+    return gulp.src('src/scss/**/*.scss')
+    .pipe(sass().on('error',sass.logError))
+    .pipe(gulp.dest('build/asset/css'))
+    .pipe(browserSync.reload({
+        stream: true
+    }))
+}
+gulp.task(style);
 
 function watch() {
     browserSync.init({
         server: {
-            baseDir: "./src",
-            index: "/index.html"
+            baseDir: "build",
         }
     });
-    gulp.watch('src/scss/**/*.scss', style);
-    gulp.watch('./*.html').on('change',browserSync.reload);
+    gulp.watch('src/scss/*.scss', style);
+    gulp.watch('src/*.html').on('change',browserSync.reload);
     gulp.watch('./js/**/*.js').on('change', browserSync.reload);
 }
+gulp.task(watch);
 
-exports.style = style;
-exports.watch = watch;
+gulp.task('start', gulp.series(html, style, watch));

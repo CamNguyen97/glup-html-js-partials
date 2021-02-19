@@ -5,8 +5,10 @@ $theme-colors: (
 @import "node_modules/bootstrap/scss/bootstrap";
 
 body {
-    color: grey;
-    background: rgb(92,18,18);
-    height: 400vh;
+    border: 1px solid;
+    color: black;
+    height: 40px;
+    .title {
+        color: red;
+    }
 }
-
