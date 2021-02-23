@@ -3,12 +3,22 @@ $theme-colors: (
 );
 
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "./header.scss";
 
 body {
-    border: 1px solid;
-    color: black;
-    height: 40px;
-    .title {
-        color: red;
+  a {
+    color: white;
+    &:hover {
+      color: #FC471E;
     }
+  }
+
+  div {
+    color: white;
+  }
+
+  .btn-border {
+    border: 1px solid white;
+    border-radius: 30px;
+  }
 }
