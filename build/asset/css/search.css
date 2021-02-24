@@ -1,0 +1,72 @@
+.search {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  min-height: 56px;
+  margin: 0 auto; }
+  .search .dropdown-toggle {
+    width: 138px;
+    background-color: white;
+    border-right: 1px solid #C2C9D1; }
+  .search .search-ip {
+    width: 800px !important;
+    height: 56px;
+    border: 0px; }
+    .search .search-ip:focus {
+      border-color: none; }
+  .search .btn-search-icon {
+    width: 60px;
+    height: 56px;
+    background-color: #FC471E;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0px; }
+
+@media (max-width: 576px) {
+  .search {
+    top: 30%;
+    left: 10%; }
+    .search .dropdown-toggle {
+      text-indent: -9999px;
+      /* sends the text off-screen */
+      background-image: url(/the_img.png);
+      width: 60px;
+      background-color: white;
+      border-right: 1px solid #C2C9D1; }
+    .search .search-ip {
+      width: 200px !important;
+      height: 40px;
+      border: 0px; }
+      .search .search-ip::-webkit-input-placeholder::before {
+        content: "Search"; }
+      .search .search-ip:focus {
+        border-color: none; }
+    .search .btn-search-icon {
+      width: 40px;
+      height: 40px;
+      background-color: #FC471E;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; } }
+
+@media (max-width: 768px) {
+  .search {
+    top: 40%;
+    left: 13%; }
+    .search .dropdown-toggle {
+      width: 120px;
+      background-color: white;
+      border-right: 1px solid #C2C9D1; }
+    .search .search-ip {
+      width: 400px !important;
+      height: 40px;
+      border: 0px; }
+      .search .search-ip::-webkit-input-placeholder::before {
+        content: "Search"; }
+      .search .search-ip:focus {
+        border-color: none; }
+    .search .btn-search-icon {
+      width: 80px;
+      height: 40px;
+      background-color: #FC471E;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; } }
