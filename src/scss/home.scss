@@ -1,3 +1,90 @@
 .home {
   min-height: 100px;
 }
+.comment {
+  margin-top: 150px;
+  ul > li > button {
+    border-radius: 30px;
+    background-color: #C2C9D1;
+  }
+  ul > li {
+    margin: 24px auto;
+  }
+}
+
+.form-sigup {
+  margin-top: 150px;
+  height: 480px;
+  background-image: url("cover_1-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    padding-top: 65px;
+    p {
+      padding-top: 63px;
+      margin-bottom: 32px;
+    }
+  }
+  form {  
+    background-color: white;  
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    border-radius: 10px;
+    .form-group {
+      padding-bottom: 24px;
+    }
+    input {
+      border-radius: 8px;
+      width: 350px;
+      margin: auto;
+    }
+    button {
+      border-radius: 30px;
+      width: 350px;
+      margin: auto !important;
+      background-color: #FC471E;
+    }
+  }
+}
+
+.artis {
+  margin-top: 150px;
+
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+
+  .carousel-inner .carousel-item-right,
+  .carousel-inner .carousel-item-left{
+    transform: translateX(0);
+  }
+
+  .img-fluid {
+    width: 135px !important;
+    height: 135px;
+  }
+
+  p {
+    margin-top: 150px;
+  }
+
+  button {
+    width: 305px;
+    background: #FC471E;
+    border-radius: 30px;
+  }
+}
