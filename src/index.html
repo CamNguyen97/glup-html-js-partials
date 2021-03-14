@@ -12,13 +12,14 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <partial src="_head.html"></partial>
-      <div class="d-flex flex-column-reverse bd-highlight">
-        <div class="p-2 bd-highlight" style="min-height: 100px; border: 1px solid black; width: 30%">
-          <partial src="_tab_search.html"></partial>
-        </div>
-        <div class="p-2 bd-highlight">Flex item 2</div>
+    <div class="d-flex" style="min-height: 500px;">
+      <div class="p-2 bd-highlight" style="width: 25%;">
+        <partial src="_tab_search.html"></partial>
       </div>
+      <div class="p-2 bd-highlight text-dark">
+        <partial src="_tab_search_content.html"></partial>
+      </div>
+    </div>
     <partial src="_footer.html"></partial>
   </body>
 </html>
