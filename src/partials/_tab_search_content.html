@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <div class="tag">
   <div class="d-flex">
     <div class="p-2">
@@ -12,15 +13,15 @@
     </div>
   </div>
 </div>
-<h4>Cat images</h4>
+<h4 style="margin-top: 15px;">Cat images</h4>
 <p>1,234,567 cat stock photos, vectors, and illustrations are available royalty-free</p>
 
 <div class="tag-recomment">
   <div class="d-flex">
-    <div class="p-2">
-      <div class="font-weight-bold text-dark align-middle mx-auto" style="vertical-align: middle!important;">Related:</div>
+    <div class="p-2 row align-items-center justify-content-center" style="margin-left: 2px;">
+      <div class="font-weight-bold text-dark" style="vertical-align: middle!important;">Related:</div>
     </div>
-    <div class="p-2">
+    <div class="p-2" style="margin-left: 8px;">
       <button type="submit" class="btn w-100">
         All orientations
       </button>
@@ -35,17 +36,74 @@
         child with cat. outdoor
       </button>
     </div>
-    <div class="p-2">
-      <div class="text-dark align-middle mx-auto">
+    <div class="p-2 row align-items-center justify-content-center ml-auto ">
+      <div class="text-dark">
         1-100 of 300
       </div>
+      <button type="button" class="btn btn-light box">
+        <i class="fal fa-angle-left text-dark"></i>
+      </button>
+      <input type="text" class="text-dark">1</input>
+      <button type="button" class="btn btn-light box-2">
+        <i class="fal fa-angle-right text-dark"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<hr class="new1">
+
+<div style="padding-left: 10px">
+  <partial src="_tab_img.html"></partial>
+</div>
+
+<div class="tag-recomment" style="margin-top: 24px; margin-bottom: 100px;">
+  <div class="d-flex">
+    <div class="p-2 row align-items-center justify-content-center ml-auto ">
+      <div class="text-dark">
+        1-100 of 300
+      </div>
+      <button type="button" class="btn btn-light box">
+        <i class="fal fa-angle-left text-dark"></i>
+      </button>
+      <input type="text" class="text-dark">1</input>
+      <button type="button" class="btn btn-light box-2">
+        <i class="fal fa-angle-right text-dark"></i>
+      </button>
     </div>
   </div>
 </div>
 
 <style>
+  hr.new1 {
+  border-top: 1px solid linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #C2C9D1;;
+}
+
+  .box {
+    width: 28px !important;
+    height: 28px !important;
+    left: 0px !important;
+    top: 0px !important;
+    border-radius: 0px !important;
+    margin-left: 16px;
+    margin-right: 8px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), #C2C9D1 !important;
+    border-radius: 2.5px !important;
+    border: 0px !important;
+  }
+  .box-2 {
+    width: 28px !important;
+    height: 28px !important;
+    left: 0px !important;
+    top: 0px !important;
+    border-radius: 0px !important;
+    margin-right: 8px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), #C2C9D1 !important;
+    border-radius: 2.5px !important;
+    border: 0px !important;
+  }
   .tag-recomment{
-    height: 29px;
+    min-height: 29px;
   }
   .tag-recomment button {
     width: 112px; 
@@ -54,3 +112,6 @@
     border: 1px solid #C2C9D1;
   }
 </style>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
