@@ -10,17 +10,60 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css" integrity="sha512-EaaldggZt4DPKMYBa143vxXQqLq5LE29DG/0OoVenoyxDrAScYrcYcHIuxYO9YNTIQMgD8c8gIUU8FQw7WpXSQ==" crossorigin="anonymous" />
 
-    <title>Hello, world!</title>
+    <title>Search</title>
   </head>
   <body>
-    <partial src="_head.html"></partial>
-    <div class="d-flex flex-row w-100">
-      <div class="p-2 w-70" style="padding-left: 0px;">
+    <div>
+      <nav class="navbar navbar-expand-lg" style="background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #C2C9D1;">
+        <a class="navbar-brand text-dark" href="index.html">qlorstock</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto left">
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="photo.html">Photo<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="vector.html">Vector</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#Work">Illustrations</a>
+            </li>
+          </ul>
+    
+          <ul class="navbar-nav right p-2 row align-items-center justify-content-center ml-auto ">
+            <li class="nav-item active">
+              <a class="nav-link" href="subscription.html" style="color: #C2C9D1 !important;">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Resume">
+                <img src="/img/heart.svg" alt="" style="color: #C2C9D1 !important;">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-border" href="#Work" style="color: #C2C9D1 !important; border: 1px solid #C2C9D1 !important;">Log in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-border" href="#Work" style="color: white; background: #FC471E; border: 0px !important; margin-left: 5px;">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- <partial src="_search.html"></partial> -->
+    </div>
+    <div style="height: 64px; background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #C2C9D1; margin-top: 2px;">
+      <div class="container"><partial src="_search-page_1.html"></partial></div>
+    </div>
+    <div class="d-flex w-100" style="min-height: 500px;">
+      <div class="p-2 bd-highlight" style="padding: 0px !important; width: 25%;">
         <partial src="_tab_search.html"></partial>
       </div>
-      <div class="p-2 w-30" style="padding-left: 0px;">
+      <div class="p-2 bd-highlight text-dark" style="width: 74%; padding-top: 0px !important;">
         <partial src="_tab_search_content.html"></partial>
       </div>
     </div>
+    <partial src="_footer.html"></partial>
   </body>
 </html>

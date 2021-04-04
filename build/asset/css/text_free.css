@@ -29,7 +29,8 @@
     margin-top: 147px; }
     .free-text .trending .text {
       margin-top: 14px;
-      margin-bottom: 19px; }
+      margin-bottom: 19px;
+      font-weight: bold; }
     .free-text .trending .col:nth-child(1) {
       padding-right: 0px; }
     .free-text .trending .col:nth-child(2) {
