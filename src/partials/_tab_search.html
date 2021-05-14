@@ -1,0 +1,231 @@
+<div style="height:56px; background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), #C2C9D1;" class="w-100" style="width: 875px;">
+  <div class="d-flex h-100" style="line-height: 42px;">
+    <div class="p-2 bd-highlight w-50 h-100 text-center">
+      <div class="text-dark">Fillter</div>
+    </div>
+    <div class="p-2 bd-highlight w-50 h-100 text-center">
+      <a href=# style="color: #3E66FB">Clear all</a>
+    </div>
+  </div>
+</div>
+
+<div class="overflow-scroll text-dark" style="min-height: 500px; overflow-y: scroll; background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #C2C9D1;">
+  <button class="accordion font-weight-bold">Image type</button>
+  <div class="panel text-dark">
+    <div class="d-flex">
+      <div class="p-2 w-50">
+        <button type="submit" class="btn ip-search w-100">
+          All image
+        </button>
+      </div>
+      <div class="p-2 w-50">
+        <button type="submit" class="btn ip-search w-100">
+          Photos
+        </button>
+      </div>
+    </div>
+
+    <div class="d-flex">
+      <div class="p-2 w-50">
+        <button type="submit" class="btn ip-search w-100">
+          Vectors
+        </button>
+      </div>
+      <div class="p-2 w-50">
+        <button type="submit" class="btn ip-search w-100">
+          Illustrations
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <button class="accordion font-weight-bold">Orientation</button>
+  <div class="panel text-dark">
+    <div class="d-flex">
+      <div class="p-2 w-50">
+        <button type="submit" class="btn ip-search w-100">
+          All orientations
+        </button>
+      </div>
+      <div class="p-2 w-50">
+        <button type="submit" class="btn ip-search w-100">
+          Horzontal
+        </button>
+      </div>
+    </div>
+
+    <div class="d-flex">
+      <div class="p-2 w-50">
+        <button type="submit" class="btn ip-search w-100">
+          Vertical
+        </button>
+      </div>
+      <div class="p-2 w-50">
+        <button type="submit" class="btn ip-search w-100">
+          Square
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <button class="accordion font-weight-bold">Color</button>
+  <div class="panel text-dark">
+    <div class="d-flex">
+      <div class="p-2">
+        <div class='box red'></div>
+      </div>
+      
+      <div class="p-2">
+        <div class='box red'></div>
+      </div>
+
+      <div class="p-2">
+        <div class='box red'></div>
+      </div>
+
+      <div class="p-2">
+        <div class='box red'></div>
+      </div>
+
+      <div class="p-2">
+        <div class='box red'></div>
+      </div>
+
+      <div class="p-2">
+        <div class='box red'></div>
+      </div>
+
+      <div class="p-2">
+        <div class='box red'></div>
+      </div>
+    </div>
+
+    <div class="d-flex">
+      <div class="p-2">
+        <div class='box red'></div>
+      </div>
+      
+      <div class="p-2">
+        <div class='box red'></div>
+      </div>
+
+      <div class="p-2">
+        <div class='box red'></div>
+      </div>
+
+      <div class="p-2">
+        <div class='box red'></div>
+      </div>
+
+      <div class="p-2">
+        <div class='box red'></div>
+      </div>
+
+      <div class="p-2">
+        <div class='box red'></div>
+      </div>
+
+      <div class="p-2">
+        <div class='box red'></div>
+      </div>
+    </div>
+  </div>
+
+  <button class="accordion font-weight-bold">Image size</button>
+  <div class="panel text-dark">
+    <div class="text-dark" style="color: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #C2C9D1; margin-bottom: 7px;">Measurement</div>
+    <select class="form-select frm w-100" aria-label="Default select example">
+      <option selected style="color: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #C2C9D1;">Pixels</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <input type="" class="form-control frm" id="exampleInputPassword1" placeholder="Min width">
+    <input type="" class="form-control frm" id="exampleInputPassword1" placeholder="Min height">
+  </div>
+
+  <button class="accordion font-weight-bold">Contributor</button>
+  <div class="panel text-dark">
+    <input type="" class="form-control frm" id="exampleInputPassword1" placeholder="Enter name">
+  </div>
+
+</div>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
+
+<style>
+  .frm {
+    height: 50px;
+    border: 1px solid #C2C9D1;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    color: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #C2C9D1;
+  }
+  .box {
+    float: left;
+    height: 30px;
+    width: 30px;
+    clear: both;
+    background-color: red !important;
+  }
+
+.red {
+  background: red !important;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+  .panel .d-flex {
+    min-height: 40px;
+  }
+  .ip-search {
+    width: 112px; 
+    border-radius: 30px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), #C2C9D1;
+  }
+  .ip-search:focus {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), #FC471E;
+    color: white;
+    border: none;
+  }
+  .accordion {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: block;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #C2C9D1;
+    /* overflow: hidden; */
+  }
+</style>

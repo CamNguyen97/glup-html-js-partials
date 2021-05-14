@@ -1,0 +1,59 @@
+<div class="artis text-center text-dark">
+  <h3 class="font-weight-bold">
+    Artists rule
+  </h3>
+  <div class="text-center text-dark">
+    Get inspired by these Adobe Stock contributors
+  <div>
+
+  <div class="container text-center my-3">
+    <div class="row mx-auto my-auto">
+      <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+        <div class="carousel-inner w-100" role="listbox">
+          <div class="carousel-item active">
+            <img width="135" height="135" class="d-block col-3 img-fluid" src="img/rec_1.png">
+          </div>
+          <div class="carousel-item">
+            <img width="135" height="135" class="d-block col-3 img-fluid" src="img/rec_1.png">
+          </div>
+          <div class="carousel-item">
+            <img width="135" height="135" class="d-block col-3 img-fluid" src="img/rec_1.png">
+          </div>
+          <div class="carousel-item">
+            <img width="135" height="135" class="d-block col-3 img-fluid" src="img/rec_1.png">
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="text-center text-dark font-weight-bold">
+      Earn royalties doing what you love
+    </p>
+    <div class="form-group w-100 text-center" style="margin-bottom: 150px;">
+      <button type="submit" class="btn text-white font-weight-bold">Become a contributor</button>
+    </div>
+  </div>
+
+<div>
+<script>
+  // $('#recipeCarousel').carousel({
+  //   interval :2000
+  // })
+
+  $('.carousel .carousel-item').each(function(){
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    for (var i=0;i<2;i++) {
+      next=next.next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+    }
+  });
+</script>

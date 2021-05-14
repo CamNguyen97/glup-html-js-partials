@@ -1,0 +1,65 @@
+.home {
+  min-height: 100px; }
+
+.comment {
+  margin-top: 150px; }
+  .comment ul > li > button {
+    border-radius: 30px;
+    background-color: #C2C9D1; }
+  .comment ul > li {
+    margin: 24px auto; }
+
+.form-sigup {
+  margin-top: 150px;
+  height: 480px;
+  background-image: url("cover_1-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .form-sigup .container {
+    padding-top: 65px; }
+    .form-sigup .container p {
+      padding-top: 63px;
+      margin-bottom: 32px; }
+  .form-sigup form {
+    background-color: white;
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    border-radius: 10px; }
+    .form-sigup form .form-group {
+      padding-bottom: 24px; }
+    .form-sigup form input {
+      border-radius: 8px;
+      width: 350px;
+      margin: auto; }
+    .form-sigup form button {
+      border-radius: 30px;
+      width: 350px;
+      margin: auto !important;
+      background-color: #FC471E; }
+
+.artis {
+  margin-top: 150px; }
+  .artis .carousel-inner .carousel-item.active,
+  .artis .carousel-inner .carousel-item-next,
+  .artis .carousel-inner .carousel-item-prev {
+    display: flex; }
+  .artis .carousel-inner .carousel-item-right.active,
+  .artis .carousel-inner .carousel-item-next {
+    transform: translateX(25%); }
+  .artis .carousel-inner .carousel-item-left.active,
+  .artis .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%); }
+  .artis .carousel-inner .carousel-item-right,
+  .artis .carousel-inner .carousel-item-left {
+    transform: translateX(0); }
+  .artis .img-fluid {
+    width: 135px !important;
+    height: 135px; }
+  .artis p {
+    margin-top: 150px; }
+  .artis button {
+    width: 305px;
+    background: #FC471E;
+    border-radius: 30px; }
